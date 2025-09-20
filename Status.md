@@ -44,11 +44,11 @@
 | NFC Sensor           |               | ❌    |
 | Temperature Sensor   |               | ✅    |
 | Battery              |               | ✅    |
-| USB Host Mode        |               | ⚠️    |
+| USB Host Mode        | OTG Vbus not works | ⚠️    |
 | USB Device Mode      |               | ✅    |
 | USB Power Delivery   |               | ❌    |
 | Charging             |               | ✅    |
-| WLAN                 |               | ⚠️    |
+| WLAN                 | Firmware Crashing | ⚠️    |
 | CPU                  |               | ✅    |
 | Touchscreen          |               | ✅    |
 | Bluetooth            |               | ⚠️    |
@@ -58,7 +58,7 @@
 | GPU                  |               | ✅    |
 | Camera               |               | ❌    |
 | Flashlight           |               | ✅    |
-| Mobile Data          |               | ❗⚠️  |
+| Mobile Data          | Need IPA v2.6 driver | ❗⚠️  |
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
