@@ -9,5 +9,5 @@
 
 **3. Portation blog with instructions**
 
-# ([Supported Devices](https://github.com/ZXlieC/xec-mainline-project))
+# [Supported Devices](https://github.com/ZXlieC/xec-mainline-project)
 
