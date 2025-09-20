@@ -29,7 +29,7 @@
 ### Support Status
 
 <table>
-<tr><td>
+<td>
 
 | Feature              | Description   | State |
 |:---------------------|:--------------|:-----:|
@@ -62,7 +62,7 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
-</td></tr>
+</td>
 </table>
 
 </br>
