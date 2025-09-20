@@ -56,7 +56,7 @@
 | Microphone           |               | ❌    |
 | GPU                  |               | ✅    |
 | Camera               |               | ❌    |
-| Flashlight           |               | ✅    |
+| Flashlight           |               | ❌    |
 | Mobile Data          | Need IPA v2.6 driver | ⚠️   |
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
