@@ -61,6 +61,8 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
+Make build: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Status.md)
+
 </td>
 </table>
 
