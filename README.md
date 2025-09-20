@@ -1,11 +1,11 @@
 # Arch Linux ARM Mobile Project
 
-## This is a project where we installing Arch Linux ARM on mobile phones.
+## This is a project in which we install Arch Linux ARM on mobile phones.
 
 # This project contains:
-**1. Linux kernel mainlining: [xec-mainline-project](https://github.com/ZXlieC/xec-mainline-project) (the most important think!)**
+**1. Linux kernel mainlining: [xec-mainline-project](https://github.com/ZXlieC/xec-mainline-project) (the most important link!)**
 
-**2. Creating a rootfs build**
+**2. Creation of a rootfs build**
 
-**3. Porting blog with instructions**
+**3. Portation blog with instructions**
 
