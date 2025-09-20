@@ -4,7 +4,6 @@
 |:------:|:------------:|
 | ✅     | Working     |
 | ⚠️     | Working Partial |
-| ❗⚠️   | Not Working Partial |
 | ❌     | Not Working |
 | ❔     | Unknown     |
 
@@ -58,7 +57,7 @@
 | GPU                  |               | ✅    |
 | Camera               |               | ❌    |
 | Flashlight           |               | ✅    |
-| Mobile Data          | Need IPA v2.6 driver | ❗⚠️  |
+| Mobile Data          | Need IPA v2.6 driver | ⚠️   |
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
