@@ -9,5 +9,5 @@
 
 **3. Portation blog with instructions**
 
-# [Supported Devices](https://github.com/ZXlieC/xec-mainline-project)
+## Supported Devices: [Status]([https://github.com/ZXlieC/xec-mainline-project](https://github.com/ZXlieC/alarm-mobile/blob/main/Status.md))
 
