@@ -3,7 +3,7 @@
 | Symbol | Meaning      |
 |:------:|:------------:|
 | ✅     | Working     |
-| ⚠️     | Working problematic |
+| ⚠️     | Working Partial |
 | ❗⚠️   | Not Working Partial |
 | ❌     | Not Working |
 | ❔     | Unknown     |
