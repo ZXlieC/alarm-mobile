@@ -1,13 +1,15 @@
 # Building root image for Xiaomi redmi note 7 (lavender)
 
 ### 1. Download Arch Linux ARM generic root build for aarch64 platforms: http://os.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz
-### 2. Create ext4 root.img file and mount it
-### 3. When you will finish building rootfs you need to convert in to sparse image
+### 2. Create ext4 root.img image and mount it
+### 3. Extract Arch Linux ARM generic root build in to root.img
+### 4. Follow Package instalition
+### 5. When you will finish building rootfs you need to convert in to sparse image
 ```sh
 pacman -S android-tools
 img2simg root.img sroot.img
 ```
-### 4. flashing
+### 6. flashing
 ```sh
 fastboot flash userdata sroot.img
 
@@ -16,7 +18,7 @@ fastboot flash root sroot.img
 ```
 
 
-## Utility instalition
+## Package instalition
 
 ### 1. Make WIFI works
 1. you need to install msm-firmware-loader: https://gitlab.postmarketos.org/postmarketOS/msm-firmware-loader
