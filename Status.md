@@ -47,7 +47,7 @@
 | USB Device Mode      |               | ✅    |
 | USB Power Delivery   |               | ❌    |
 | Charging             |               | ✅    |
-| WLAN                 | Firmware Crashing | ⚠️    |
+| WLAN                 |               | ✅    |
 | CPU                  |               | ✅    |
 | Touchscreen          |               | ✅    |
 | Bluetooth            |               | ⚠️    |
@@ -61,7 +61,7 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
-Make build: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Status.md)
+Make image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Status.md)
 
 </td>
 </table>
