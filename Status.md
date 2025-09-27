@@ -61,7 +61,7 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
-Make image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Status.md)
+Make image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender.md)
 
 </td>
 </table>
