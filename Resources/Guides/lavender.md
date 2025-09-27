@@ -56,7 +56,7 @@ echo "Restart=always" >> /usr/lib/systemd/system/diag-router.service
 echo "RestartSec=1"
 echo "" >> /usr/lib/systemd/system/diag-router.service
 echo "[Install]" >> /usr/lib/systemd/system/diag-router.service
-echo "WantedBy=multi-user.target" /usr/lib/systemd/system/diag-router.service
+echo "WantedBy=multi-user.target" >> /usr/lib/systemd/system/diag-router.service
 systemctl enable diag-router
 ```
 
