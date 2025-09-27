@@ -12,8 +12,10 @@ img2simg root.img sroot.img
 ### 6. flashing
 ```sh
 fastboot flash userdata sroot.img
+```
 
 or you can change GPT layout by gdisk and combine vendor, system, cache, frp, userdata in to one root partition.
+```sh
 fastboot flash root sroot.img
 ```
 
