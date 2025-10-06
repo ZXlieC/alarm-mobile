@@ -63,7 +63,9 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
-Build root image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender.md)
+Build boot image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender/boot.md)
+
+Build root image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender/root.md)
 
 </td>
 </table>
