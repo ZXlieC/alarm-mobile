@@ -22,7 +22,7 @@ fastboot flash root sroot.img
 
 ## Package instalition
 
-### 1. Make WIFI works
+### 1. Make WIFI and modem works
 1. you need to install msm-firmware-loader: https://gitlab.postmarketos.org/postmarketOS/msm-firmware-loader
 2. build wifi firmware (firmware-5.bin you can get in linux-firmware-atheros package): https://github.com/jhugo/linux/commit/ae097bf4ae31e1de396045dc1dca4a7dcdbd6111
 
@@ -61,8 +61,18 @@ echo "[Install]" >> /usr/lib/systemd/system/diag-router.service
 echo "WantedBy=multi-user.target" >> /usr/lib/systemd/system/diag-router.service
 systemctl enable diag-router
 ```
+### 2. Make cellular works
 
-### 2. Make GPU (Adreno 512) works
+1. installing packages
+    ```sh
+    pacman -S ModemManager
+    systemctl enable ModemManager
+    ```
+2. install msm-modem-uim-selection: https://gitlab.com/TravMurav/pmaports/-/tree/msm-modem-uim/modem/msm-modem
+
+3. insert SIM card before boot linux
+
+### 3. Make GPU (Adreno 512) works
 1. installing packages
     ```sh
     pacman -S linux-firmware-qcom
