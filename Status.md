@@ -63,7 +63,7 @@
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
-Make image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender.md)
+Build root image: [Guide](https://github.com/ZXlieC/alarm-mobile/blob/main/Resources/Guides/lavender.md)
 
 </td>
 </table>
