@@ -57,7 +57,7 @@
 | GPU                  |               | ✅    |
 | Camera               |               | ❌    |
 | Flashlight           |               | ❌    |
-| Mobile Data  | remoteproc crashing     |  | ❌    |
+| Mobile Data  | remoteproc crashing  |   |  | ❌    |
 | SMS            |               | ✅   
 | Calls            |               | ✅ |  
 | Display              |               | ✅    | 
