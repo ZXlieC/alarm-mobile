@@ -57,7 +57,8 @@
 | GPU                  |               | ✅    |
 | Camera               |               | ❌    |
 | Flashlight           |               | ❌    |
-| Mobile Data          | Need IPA v2.6 driver | ⚠️   |
+| Mobile Data          |  | ❌    |
+| SMS            |               | ✅   
 | Display              |               | ✅    | 
 | Vibration            |               | ✅    |
 
