@@ -1,6 +1,6 @@
 # Build boot.img
 
-## 1. Build kernel
+## 1. Compile kernel & build kernel modules
 
 ```sh
 git clone https://github.com/ZXlieC/xec-mainline-project.git
