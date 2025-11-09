@@ -32,8 +32,10 @@ Now you can use the `chroot` command to set up your aarch64 root build
 mkdir alarm
 sudo tar -zxvf ../ArchLinuxARM-aarch64-latest.tar.gz -C alarm
 sudo mount root.img alarm/root
-rm alarm/etc/resolv.conf
-echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
+sudo rm alarm/etc/resolv.conf
+sudo echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
+sudo rm alarm/etc/mtab
+sudo cp /proc/self/mounts alarm/etc/mtab
 sudo chroot alarm
 pacman-key --init
 pacman-key --populate archlinuxarm
