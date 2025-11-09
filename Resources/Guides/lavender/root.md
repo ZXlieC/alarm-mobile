@@ -39,7 +39,7 @@ sudo chroot alarm
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 pacman-key --init
 pacman-key --populate archlinuxarm
-pacman -Sy
+pacman -Sy git base-devel ninja meson gcc make
 ```
 
 ## If your device based on aarch64 architecture just mount root.img again to root directory and enter root by sudo
@@ -75,7 +75,7 @@ exit
 
 3. installing needed packages
 ```sh
-pacman --needed -S rmtfs-git qrtr-git git base-devel ninja meson gcc make -r root
+pacman --needed -S rmtfs-git qrtr-git -r root
 
 git clone https://github.com/linux-msm/tqftpserv.git
 cd tqftpserv
