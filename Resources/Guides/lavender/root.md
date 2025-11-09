@@ -44,7 +44,7 @@ sudo -i
 ### 1. Delete linux-firmware and linux-aarch64 packages
 
 ```sh
-pacman -Rc linux-firmware linux-aarch64 =r root
+pacman -Rc linux-firmware linux-aarch64 -r root
 ```
     
 ### 2. Make WIFI and modem works
