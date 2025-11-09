@@ -32,6 +32,8 @@ Now you can use the `chroot` command to set up your aarch64 root build
 mkdir alarm
 sudo tar -zxvf ../ArchLinuxARM-aarch64-latest.tar.gz -C alarm
 sudo mount root.img alarm/root
+rm alarm/etc/resolv.conf
+echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
 sudo chroot alarm
 ```
 
@@ -50,6 +52,7 @@ pacman -Rc linux-firmware linux-aarch64 -r root
 ### 2. Make WIFI and modem works
 1. Install msm-firmware-loader
 ```sh
+pacman --needed -S git
 git clone https://gitlab.postmarketos.org/postmarketOS/msm-firmware-loader.git
 cp msm-firmware-loader/msm-firmware-loader.service root/usr/lib/systemd/system/
 cp msm-firmware-loader/msm-firmware-loader-unpack.service root/usr/lib/systemd/system/
