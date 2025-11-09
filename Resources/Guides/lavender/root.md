@@ -82,8 +82,8 @@ cd tqftpserv
 meson build
 cd build
 ninja
-cp tqftpserv ../../usr/bin/
-cp tqftpserv.service ../../usr/lib/systemd/system/
+cp tqftpserv ../../root/usr/bin/
+cp tqftpserv.service ../../root/usr/lib/systemd/system/
 
 cd ../../
 
