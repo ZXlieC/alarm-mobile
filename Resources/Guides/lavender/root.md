@@ -41,8 +41,13 @@ sudo mount root.img root
 sudo -i
 ```
 
+### 1. Delete linux-firmware and linux-aarch64 packages
+
+```sh
+pacman -Rc linux-firmware linux-aarch64 =r root
+```
     
-### 1. Make WIFI and modem works
+### 2. Make WIFI and modem works
 1. Install msm-firmware-loader
 ```sh
 git clone https://gitlab.postmarketos.org/postmarketOS/msm-firmware-loader.git
@@ -99,7 +104,7 @@ systemctl enable tqftpserv
 systemctl enable diag-router
 exit
 ```
-### 2. Make cellular works
+### 3. Make cellular works
 
 1. installing packages
     ```sh
@@ -112,7 +117,7 @@ exit
 
 3. insert SIM card before boot linux
 
-### 3. Make GPU (Adreno 512) works
+### 4. Make GPU (Adreno 512) works
 1. installing packages
     ```sh
     pacman --needed -S linux-firmware-qcom -r root
