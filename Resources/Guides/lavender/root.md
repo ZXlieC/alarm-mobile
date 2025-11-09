@@ -35,6 +35,9 @@ sudo mount root.img alarm/root
 rm alarm/etc/resolv.conf
 echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
 sudo chroot alarm
+pacman-key --init
+pacman-key --populate archlinuxarm
+pacman -Sy
 ```
 
 ## If your device based on aarch64 architecture just mount root.img again to root directory and enter root by sudo
