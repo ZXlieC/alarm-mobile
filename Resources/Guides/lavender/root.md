@@ -6,14 +6,14 @@ curl -O 'https://ca.us.mirror.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.ta
 ```
 ### 2. Create ext4 root.img image and mount it
 ```sh
-truncate -s 2G root.img
+truncate -s 3G root.img
 mkfs.ext4 root.img
 mkdir root
 sudo mount root.img root
 ```
 ### 3. Extract Arch Linux ARM generic root build in to root.img mountpoint and unmount it
 ```sh
-sudo tar -zxvf ../ArchLinuxARM-aarch64-latest.tar.gz -C root
+sudo tar -zxvf ArchLinuxARM-aarch64-latest.tar.gz -C root
 sudo umount root
 ```
 
