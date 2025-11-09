@@ -117,7 +117,7 @@ exit
 
 1. installing packages
     ```sh
-    pacman --needed -S ModemManager -r root
+    pacman --needed -S modemmanager -r root
     chroot root
     systemctl enable ModemManager
     exit
