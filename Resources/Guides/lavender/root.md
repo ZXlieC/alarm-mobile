@@ -30,7 +30,7 @@ Now you can use the `chroot` command to set up your aarch64 root build
 ### Create, mount root.img and enter aarch64 Arch Linux ARM root enviroment
 ```sh
 mkdir alarm
-sudo tar -zxvf ../ArchLinuxARM-aarch64-latest.tar.gz -C alarm
+sudo tar -zxvf ArchLinuxARM-aarch64-latest.tar.gz -C alarm
 sudo mount root.img alarm/root
 sudo rm alarm/etc/resolv.conf
 sudo rm alarm/etc/mtab
