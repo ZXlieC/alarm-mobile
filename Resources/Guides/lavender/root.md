@@ -4,21 +4,18 @@
 ```sh
 curl -O 'https://ca.us.mirror.archlinuxarm.org/os/ArchLinuxARM-aarch64-latest.tar.gz'
 ```
-### 2. Create ext4 root.img image and mount it
+### 2. Create ext4 root.img image and extract Arch Linux ARM generic root build in to root.img mountpoint and unmount it
 ```sh
 truncate -s 3G root.img
 mkfs.ext4 root.img
 mkdir root
 sudo mount root.img root
-```
-### 3. Extract Arch Linux ARM generic root build in to root.img mountpoint and unmount it
-```sh
 sudo tar -zxvf ArchLinuxARM-aarch64-latest.tar.gz -C root
 sudo umount root
 ```
 
 <details>
-<b><summary>4. Follow Package instalition</b></summary>
+<b><summary>3. Follow Package instalition</b></summary>
 
 
 ## If your device where you going to install packages not based on aarch64 architecture you need to install QEMU and Arch Linux ARM aarch64 enviroment
@@ -134,13 +131,13 @@ exit
 
 
 
-### 5. Unmount and convert root.img in to sparse image
+### 4. Unmount and convert root.img in to sparse image
 ```sh
 sudo umount root.img
 sudo pacman --neded -S android-tools
 img2simg root.img sroot.img
 ```
-### 6. flashing
+### 5. flashing
 ```sh
 fastboot flash userdata sroot.img
 ```
