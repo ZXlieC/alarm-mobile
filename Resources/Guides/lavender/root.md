@@ -148,7 +148,7 @@ exit
 ### 4. Unmount and convert root.img in to sparse image
 ```sh
 sudo umount root.img
-sudo pacman --neded -S android-tools
+sudo pacman --needed -S android-tools
 img2simg root.img sroot.img
 ```
 ### 5. flashing
