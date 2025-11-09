@@ -33,10 +33,10 @@ mkdir alarm
 sudo tar -zxvf ../ArchLinuxARM-aarch64-latest.tar.gz -C alarm
 sudo mount root.img alarm/root
 sudo rm alarm/etc/resolv.conf
-sudo echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
 sudo rm alarm/etc/mtab
 sudo cp /proc/self/mounts alarm/etc/mtab
 sudo chroot alarm
+sudo echo "nameserver 8.8.8.8" > alarm/etc/resolv.conf
 pacman-key --init
 pacman-key --populate archlinuxarm
 pacman -Sy
