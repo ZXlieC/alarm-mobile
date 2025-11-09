@@ -75,7 +75,7 @@ exit
 
 3. installing needed packages
 ```sh
-pacman --needed -S rmtfs-git qrtr-git git base-devel ninja meson -r root
+pacman --needed -S rmtfs-git qrtr-git git base-devel ninja meson make -r root
 
 git clone https://github.com/linux-msm/tqftpserv.git
 cd tqftpserv
