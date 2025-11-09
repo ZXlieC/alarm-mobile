@@ -39,7 +39,7 @@ sudo chroot alarm
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 pacman-key --init
 pacman-key --populate archlinuxarm
-pacman -Sy git base-devel ninja meson gcc make
+pacman -Sy git base-devel ninja meson gcc make qrtr-git
 ```
 
 ## If your device based on aarch64 architecture just mount root.img again to root directory and enter root by sudo
