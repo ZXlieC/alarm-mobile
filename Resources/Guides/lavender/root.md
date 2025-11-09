@@ -82,28 +82,29 @@ cd tqftpserv
 meson build
 cd build
 ninja
-cp tqftpserv /usr/bin/
-cp tqftpserv.service /usr/lib/systemd/system/
+cp tqftpserv ../../usr/bin/
+cp tqftpserv.service ../../usr/lib/systemd/system/
 
 cd ../../
 
 git clone https://github.com/linux-msm/diag.git
 cd diag
 make
-cp diag-router /usr/bin/
-cp send_data /usr/bin
-touch /usr/lib/systemd/system/diag-router.service                                                         
-echo "[Unit]" > /usr/lib/systemd/system/diag-router.service
-echo "Description=Qualcomm DIAG router" >> /usr/lib/systemd/system/diag-router.service
-echo "Before=rmtfs.service" >> /usr/lib/systemd/system/diag-router.service
-echo "" >> /usr/lib/systemd/system/diag-router.service
-echo "[Service]" >> /usr/lib/systemd/system/diag-router.service
-echo "ExecStart=/usr/bin/diag-router" >> /usr/lib/systemd/system/diag-router.service
-echo "Restart=always" >> /usr/lib/systemd/system/diag-router.service
-echo "RestartSec=1"
-echo "" >> /usr/lib/systemd/system/diag-router.service
-echo "[Install]" >> /usr/lib/systemd/system/diag-router.service
-echo "WantedBy=multi-user.target" >> /usr/lib/systemd/system/diag-router.service
+cp diag-router ../root/usr/bin/
+cp send_data ../root/usr/bin
+cd ..
+touch root/usr/lib/systemd/system/diag-router.service                                                         
+echo "[Unit]" > root/usr/lib/systemd/system/diag-router.service
+echo "Description=Qualcomm DIAG router" >> root/usr/lib/systemd/system/diag-router.service
+echo "Before=rmtfs.service" >> root/usr/lib/systemd/system/diag-router.service
+echo "" >> root/usr/lib/systemd/system/diag-router.service
+echo "[Service]" >> root/usr/lib/systemd/system/diag-router.service
+echo "ExecStart=/usr/bin/diag-router" >> root/usr/lib/systemd/system/diag-router.service
+echo "Restart=always" >> root/usr/lib/systemd/system/diag-router.service
+echo "RestartSec=1" >> root/usr/lib/systemd/system/diag-router.service
+echo "" >> root/usr/lib/systemd/system/diag-router.service
+echo "[Install]" >> root/usr/lib/systemd/system/diag-router.service
+echo "WantedBy=multi-user.target" >> root/usr/lib/systemd/system/diag-router.service
 
 chroot root
 systemctl enable rmtfs
