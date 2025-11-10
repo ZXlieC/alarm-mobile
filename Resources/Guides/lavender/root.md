@@ -63,6 +63,7 @@ cp msm-firmware-loader/msm-firmware-loader.service root/usr/lib/systemd/system/
 cp msm-firmware-loader/msm-firmware-loader-unpack.service root/usr/lib/systemd/system/
 cp msm-firmware-loader/msm-firmware-loader.sh root/usr/sbin/
 cp msm-firmware-loader/msm-firmware-loader-unpack.sh root/usr/sbin/
+chmod +x root/usr/sbin/msm-firmware-loader*
 mkdir root/lib/firmware/msm-firmware-loader
 
 chroot root
@@ -75,14 +76,14 @@ exit
 
 3. installing needed packages
 ```sh
-pacman --needed -S rmtfs-git qrtr-git -r root
+pacman --needed -S rmtfs-git qrtr-git networkmanager -r root
 
 git clone https://github.com/linux-msm/tqftpserv.git
 cd tqftpserv
 meson build
 cd build
 ninja
-cp tqftpserv ../../root/usr/bin/
+cp tqftpserv ../../root/usr/local/bin/
 cp tqftpserv.service ../../root/usr/lib/systemd/system/
 
 cd ../../
@@ -111,6 +112,7 @@ systemctl enable rmtfs
 systemctl enable qrtr-ns
 systemctl enable tqftpserv
 systemctl enable diag-router
+systemctl enable NetworkManager
 exit
 ```
 ### 3. Make cellular works
