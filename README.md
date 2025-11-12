@@ -3,7 +3,7 @@
 ## Here we instaling Arch Linux ARM on mobile phones.
 
 # This project contains:
-**1. Linux kernel mainlining: [xec-mainline-project](https://github.com/ZXlieC/xec-mainline-project)**
+**1. Linux kernel mainlining: [xec-mainline-project](https://github.com/Xlie-Electronic-Customs/linux)**
 
 **2. Building boot and root image**
 
